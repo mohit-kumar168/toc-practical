@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{makeidx}
+\makeindex
+\onehalfspacing
+\title{Economic Analysis using \LaTeX}
+\author{Abhishek Sahu}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter{Introduction}
+This mini project demonstrates how to combine multiple \LaTeX{} features | including l
+\section{Objectives}
+\begin{itemize}
+\item Learn basic \LaTeX{} document structure.
+\item Apply formatting, lists, and mathematical symbols.
+\item Present data neatly in tabular form.
+\end{itemize}
+\chapter{Data Analysis}
+\section{Table Example}
+\begin{table}[h!]
+\centering
+6\caption{Sample Economic Data}
+\begin{tabular}{l c c}
+\toprule
+Year & GDP Growth (\%) & Inflation (\%) \\
+\midrule
+2020 & -7.3 & 6.2 \\
+2021 & 8.9 & 5.5 \\
+2022 & 6.8 & 6.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{Mathematical Equation}
+The GDP growth rate ($g$) can be calculated as:
+\[
+g = \frac{GDP_t - GDP_{t-1}}{GDP_{t-1}} \times 100
+\]
+For example, if GDP in 2021 was 210 and in 2020 was 200:
+\[
+g = \frac{210 - 200}{200} \times 100 = 5\%
+\]
+\section{Figure Example}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{image.png}
+\caption{Example Chart Showing GDP Trend}
+\end{figure}
+\chapter{Conclusion}
+Using \LaTeX, we can design neat, consistent, and professional academic reports that c
+\begin{thebibliography}{9}
+\bibitem{kottwitz2021}
+Stefan Kottwitz,
+\textit{LaTeX Beginner’s Guide (2nd ed.)},
+Packet Publishing Ltd., 2021.
+\bibitem{lamport1994}
+Leslie Lamport,
+\textit{LaTeX: A Document Preparation System},
+Pearson Education, 1994.
+\end{thebibliography}
+\end{document}
