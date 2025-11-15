@@ -1,0 +1,50 @@
+\documentclass[12pt, a4paper, oneside]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+
+% Page geometry
+\geometry{left=1.5in, right=1in, top=1in, bottom=1in}
+
+
+\begin{document}
+	\chapter*{Notations}
+\addcontentsline{toc}{chapter}{Notations}
+
+\section*{Calculus}
+
+\begin{tabular}{ll}
+$\frac{dy}{dx}$ & Derivative of $y$ with respect to $x$ \\[0.5em]
+$\frac{\partial y}{\partial x}$ & Partial derivative of $y$ with respect to $x$ \\[0.5em]
+$\nabla_{\mathbf{x}} y$ & Gradient of $y$ with respect to $\mathbf{x}$ \\[0.5em]
+$\nabla_{\mathbf{X}} y$ & Matrix derivatives of $y$ with respect to $\mathbf{X}$ \\[0.5em]
+$\nabla_{\mathbf{X}} y$ & Tensor containing derivatives of $y$ with respect to $\mathbf{X}$ \\[0.5em]
+$\frac{\partial f}{\partial \mathbf{x}}$ & Jacobian matrix $\mathbf{J} \in \mathbb{R}^{m \times n}$ of $f: \mathbb{R}^n \to \mathbb{R}^m$ \\[0.5em]
+$\nabla^2_x f(\mathbf{x})$ or $\mathbf{H}(f)(\mathbf{x})$ & The Hessian matrix of $f$ at input point $\mathbf{x}$ \\[0.5em]
+$\int f(\mathbf{x})d\mathbf{x}$ & Definite integral over the entire domain of $\mathbf{x}$ \\[0.5em]
+$\int_{\mathbb{S}} f(\mathbf{x})d\mathbf{x}$ & Definite integral with respect to $\mathbf{x}$ over the set $\mathbb{S}$ \\
+\end{tabular}
+
+\section*{Probability and Information Theory}
+
+\begin{tabular}{ll}
+$\mathrm{a} \perp \mathrm{b}$ & The random variables a and b are independent \\[0.5em]
+$\mathrm{a} \perp \mathrm{b} \mid \mathrm{c}$ & They are conditionally independent given c \\[0.5em]
+$P(\mathrm{a})$ & A probability distribution over a discrete variable \\[0.5em]
+$p(\mathrm{a})$ & A probability distribution over a continuous variable, \\
+& or over a variable whose type has not been specified \\[0.5em]
+$\mathrm{a} \sim P$ & Random variable a has distribution $P$ \\[0.5em]
+$\mathbb{E}_{\mathbf{x} \sim P}[f(x)]$ or $\mathbb{E}f(x)$ & Expectation of $f(x)$ with respect to $P(\mathbf{x})$ \\[0.5em]
+$\mathrm{Var}(f(x))$ & Variance of $f(x)$ under $P(\mathbf{x})$ \\[0.5em]
+$\mathrm{Cov}(f(x), g(x))$ & Covariance of $f(x)$ and $g(x)$ under $P(\mathbf{x})$ \\[0.5em]
+$H(\mathbf{x})$ & Shannon entropy of the random variable $\mathbf{x}$ \\[0.5em]
+$D_{\mathrm{KL}}(P \| Q)$ & Kullback-Leibler divergence of P and Q \\[0.5em]
+$\mathcal{N}(\mathbf{x}; \boldsymbol{\mu}, \boldsymbol{\Sigma})$ & Gaussian distribution over $\mathbf{x}$ with mean $\boldsymbol{\mu}$ and \\
+& covariance $\boldsymbol{\Sigma}$ \\
+\end{tabular}
+\end{document}
